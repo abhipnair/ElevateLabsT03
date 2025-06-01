@@ -16,14 +16,17 @@ Nessus is a powerful, widely-used vulnerability scanner developed by Tenable. It
 Visit the official Nessus download page
 
 2. Install Nessus
-
-    sudo dpkg -i Nessus-<version>-debian10_amd64.deb
-    sudo apt --fix-broken install -y
+```bash
+sudo dpkg -i Nessus-<version>-debian10_amd64.deb
+sudo apt --fix-broken install -y
+```
 
 3. Start and Enable Nessus Service
 
-    sudo systemctl start nessusd
-    sudo systemctl enable nessusd
+```bash
+sudo systemctl start nessusd
+sudo systemctl enable nessusd
+```
 
 4. Access Web Interface
 
@@ -121,4 +124,4 @@ Select a suitable template based on your goal. Common ones:
 ![Screenshot of the hosts](images/host-2.png)
 ![Screenshot of the hosts](images/host-3.png)
 
-    Note: You can see the vulnerabilities: note that these are not much effective and cve score is low(info)
+    Note: You can see the vulnerabilities note that these are not much effective and cve score is low(info)
